@@ -1,0 +1,2 @@
+User-agent: http://www.nominet.org.uk/privacypolicy
+Disallow: /
