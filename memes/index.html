@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oh no...</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+</head>
+<style>
+    video {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        transform: translateX(-50%) translateY(-50%);
+    }
+</style>
+<body>
+<video id="bgvid" playsinline autoplay loop>
+    <source src="nyan.webm" type="video/webm">
+    <source src="nyan.mp4" type="video/mp4">
+</video>
+<script>
+    $(window).click(function () {
+        alert("RIP Your sanity xD");
+    });
+</script>
+</body>
+</html>
