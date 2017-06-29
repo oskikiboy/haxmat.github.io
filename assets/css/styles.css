@@ -79,3 +79,7 @@ a {
   -webkit-transition: none 86ms ease-out;
   transition: none 86ms ease-out;
 }
+
+.hidden {
+  display: none;
+}
