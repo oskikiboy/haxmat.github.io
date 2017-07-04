@@ -23,7 +23,7 @@
 	<style>
 	</style>
 </head>
-<body onload="loader()">
+<body>
 <div id="loading"></div>
 <div class="non-loader">
 	<nav class="nav has-shadow nav-bold" style="color: #7a7a7a;">
@@ -179,6 +179,9 @@
 	</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script type="text/javascript">
+
+	window.addEventListener('load', function() { loader(); }, false);
+
     function loader() {
         $('#loading').fadeOut(1000).addClass('hidden');
         $('.non-loader').fadeIn(1000).removeClass('non-loader');
