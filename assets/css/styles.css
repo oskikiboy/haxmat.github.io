@@ -9,6 +9,7 @@
   background-size: cover;
   left: 0; right: 0; top: 0; bottom: 0;
   margin: auto;
+  z-index: 99999;
   animation: round 2s linear infinite;
   -webkit-animation: round 2s linear infinite;
   -moz-animation: round 2s linear infinite;
