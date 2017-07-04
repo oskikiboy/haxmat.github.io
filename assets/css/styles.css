@@ -17,7 +17,7 @@
 
 .non-loader {
   display: none;
-  transition: ;
+  transition: 1s;
 }
 
 @keyframes round{
