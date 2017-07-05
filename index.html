@@ -14,14 +14,11 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="assets/css/font-mfizz/font-mfizz.css">
-	<link rel="stylesheet" href="assets/css/font-awesome-extension.min.css">
 	<link href="assets/css/font-mfizz.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="shortcut icon" href="assets/img/icon.png">
 	<link rel="stylesheet" href="assets/css/styles.css">
 	<title>Harry</title>
-	<style>
-	</style>
 </head>
 <body>
 <div id="loading"></div>
@@ -176,14 +173,11 @@
 	</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script type="text/javascript">
-
 	$(window).load(function() { loader(); });
-
     function loader() {
         $('#loading').fadeOut(1000).addClass('hidden');
         $('.non-loader').fadeIn(1000).removeClass('non-loader');
     }
-
     $(window).scroll(function() {
         var top = $('#skills').offset().top;
         if ($(this).scrollTop() >= top) {
