@@ -24,7 +24,7 @@
     <![endif]-->
 	<title>Harry</title>
 </head>
-<body>
+<body onload="loader()">
 <div id="loading"></div>
 <div class="non-loader">
 	<nav class="nav has-shadow nav-bold" style="color: #7a7a7a;">
@@ -63,7 +63,7 @@
 	</nav>
 	<div id="wrap">
 		<div id="main">
-	<section id="header" class="hero is-info is-fullheight is-bold" style="background: url('assets/img/showcase.jpg');background-size: cover;background-attachment: fixed;">
+	<section id="header" class="hero is-info is-fullheight is-bold" style="background: url('assets/img/showcase.jpg');background-size: cover;">
 		<div class="hero-head"></div>
 		<div class="hero-body">
 			<div class="container has-text-centered" style="position: relative;top: 2px;padding: 60px;">
@@ -175,9 +175,8 @@
   </div>
 </footer>
 	</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
-	$(window).load(function() { loader(); });
     function loader() {
         $('#loading').fadeOut(1000).addClass('hidden');
         $('.non-loader').fadeIn(1000).removeClass('non-loader');
