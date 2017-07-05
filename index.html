@@ -24,9 +24,7 @@
     <![endif]-->
 	<title>Harry</title>
 </head>
-<body onload="loader()">
-<div id="loading"></div>
-<div class="non-loader">
+<body>
 	<nav class="nav has-shadow nav-bold" style="color: #7a7a7a;">
 		<div class="nav-left">
 			<a class="nav-item">
@@ -174,13 +172,8 @@
     </div>
   </div>
 </footer>
-	</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
-    function loader() {
-        $('#loading').fadeOut(1000).addClass('hidden');
-        $('.non-loader').fadeIn(1000).removeClass('non-loader');
-    }
     $(window).scroll(function() {
         var top = $('#skills').offset().top;
         if ($(this).scrollTop() >= top) {
