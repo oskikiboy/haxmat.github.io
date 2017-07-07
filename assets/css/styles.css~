@@ -1,0 +1,125 @@
+#loading {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ccc;
+  border-top-color: #7a7a7a;
+  border-radius: 100%;
+  position: fixed;
+  background: whitesmoke;
+  background-size: cover;
+  left: 0; right: 0; top: 0; bottom: 0;
+  margin: auto;
+  z-index: 99999;
+  animation: round 2s linear infinite;
+  -webkit-animation: round 2s linear infinite;
+  -moz-animation: round 2s linear infinite;
+}
+
+.non-loader {
+  display: none;
+  transition: 1s;
+}
+
+@keyframes round{
+  from{
+    transform: rotate(0deg);
+  }
+  to{transform: rotate(360deg)}
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  height: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+#main {
+  overflow: auto;
+  padding-bottom: 180px; /* must be same height as the footer */
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+#footer {
+  position: relative;
+  margin-top: -180px;
+  /* negative value of footer height */
+  height: 180px;
+  clear: both;
+}
+
+body:before {
+  content: "";
+  height: 100%;
+  float: left;
+  width: 0;
+  margin-top: -32767px;
+  /* thank you Erik J - negate effect of float*/
+}
+
+.nav-item a.is-tab.is-active, a.nav-item.is-tab.is-active {
+  border-bottom: 3px solid #3273dc;
+  color: #3273dc;
+  padding-bottom: calc(0.75rem - 3px);
+}
+
+.nav-item a.is-tab.is-active:hover, a.nav-item.is-tab.is-active:hover {
+  border-bottom: 3px solid #3273dc;
+  color: #3273dc;
+  padding-bottom: calc(0.75rem - 3px);
+}
+
+.nav-item a.is-tab:hover, a.nav-item.is-tab:hover {
+  border-bottom: 1px solid #3273dc;
+  color: #3273dc;
+  padding-bottom: calc(0.75rem - 3px);
+}
+
+.nav-toggle.is-active span {
+  background-color: #3273dc;
+}
+
+.nav-item a, a.nav-item {
+  color: #7a7a7a;
+}
+
+.footer a {
+  color: #3273dc;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: none 86ms ease-out;
+  transition: none 86ms ease-out;
+}
+
+.footer a:hover {
+  color: #363636;
+}
+
+a {
+  color: #3273dc;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: none 86ms ease-out;
+  transition: none 86ms ease-out;
+}
+
+.hidden {
+  opacity: 0;
+}
