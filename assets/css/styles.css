@@ -28,6 +28,10 @@ html, body {
   -moz-transition: 1s;
 }
 
+.nav a {
+  color: #fff;
+}
+
 #wrap {
   min-height: 100%;
 }
