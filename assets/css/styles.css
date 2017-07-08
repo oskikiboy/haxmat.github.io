@@ -21,7 +21,6 @@ html, body {
 }
 
 .nav {
-  position: fixed;
   width: 100%;
   transition: 1s;
   -webkit-transition: 1s;

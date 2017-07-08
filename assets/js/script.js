@@ -4,11 +4,11 @@ $(document).ready(function() {
         typeSpeed: 10
     });
 });
-$(window).scroll(function() {
-    var top = $('#skills').offset().top;
-    if ($(this).scrollTop() >= top) {
-        $('.nav').css({'opacity': 0.5});
-    } else {
-        $('.nav').css({'opacity': 1});
-    }
-});
+// $(window).scroll(function() {
+//     var top = $('#skills').offset().top;
+//     if ($(this).scrollTop() >= top) {
+//         $('.nav').css({'opacity': 0.5});
+//     } else {
+//         $('.nav').css({'opacity': 1});
+//     }
+// });
